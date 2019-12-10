@@ -19,6 +19,7 @@ const SearchBar = (props: Props) => {
         justifyContent: 'space-around',
         height: 50,
         width: '95%',
+        marginTop: 10,
         borderRadius: 10,
       }}>
       {renderBackButton()}

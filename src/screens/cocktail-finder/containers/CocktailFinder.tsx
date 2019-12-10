@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   KeyboardAvoidingView,
+  Platform,
 } from 'react-native';
 import {RootState} from '../../../store';
 import {Cocktail} from '../../../types/cocktailFinderTypes';
@@ -50,7 +51,9 @@ class CocktailFinder extends React.Component<Props> {
   render() {
     const {loading, cocktails} = this.props;
     return (
-      <KeyboardAvoidingView behavior="padding" enabled>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        enabled>
         <LinearGradient
           colors={['#c81492', '#e64132']}
           start={{x: 0.0, y: 1}}

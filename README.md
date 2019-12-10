@@ -1,4 +1,4 @@
-# Cocktail App
+g# Cocktail App
 
 Assuming you are a react native developer and you have xcode and android development environment previously installed and configured.
 
